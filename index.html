@@ -1,3 +1,6 @@
+<!-- J'ai utilisé Sublime Text pour corriger ce code
+   et j'ai commenté les différnetes lignes que j'ai modifié  -->
+
 <!DOCTYPE html>
 <html lang="fra">
 <head>
@@ -13,70 +16,92 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 
     <style>
+
         body{
             background:#ccc;
             color:#111;
-            font-family:Arial
+            font-family: Arial;    /* ; à été omit sur cette ligne*/
             font-size:13px;
         }
-        #menu{margin:10px 15px;align:right;}
+
+        #menu{
+            margin:10px 15px;
+            align: right;
+        }
 
         ul li{
             display:inline-block;
-            marign:0;
+            margin:0;    /* margin mal écrit(marign)*/
         }
+
         ul li a{
             padding:5px;
             color:#555;
         }
 
-        #bold{font-width: bold;}
+        #bold{
+            font-weight: bold; /* font-width au lieu de font-weight pour afficher le text en gras*/
+        }
+
+        /* style du footer*/
+        #footer{
+                float:left;
+                margin-top:20px;
+                color:#999;
+                font-size:9px;
+                font-style:underline;
+            }
+
     </style>
 
 </head>
 <body>
 
-<div id="page">
+    <div id="page">
 
-<div id="logo"><a href="#"><img src="images/logo.jpg" alt="Bugz'z logo" /></a></div>
+        <div id="logo">
+            <a href="#"><img src="images/logo.jpg" alt="Bugz'z logo" /></a>
+        </div>
 
-	<div id="menu">
-        <a href="#"  title="">Login</a> | <b><a href="#" title="" id="bold">S'enregistrer</b></a>
-        </br>
+    	<div id="menu">
 
-        <li><a href="#" id="bold">Comment ça marche ?</a></li>
-        <li><a href="#">Commencer</a></li>
-        <li><a href="#">Galerie</a></li>
-        <li><a href="#">Communauté</a></li>
-        <li><a href="#">Contact</a></li>
+            <a href="#"  title="">Login</a> | <a href="#" title="" id="bold"> S'enregistrer </a> <!-- les balise <b> et </b> ont été éffacés car id ="bold" definie dans le style permet déja d'afficher le text en gras -->
+            </br>
 
-	</div>
+            <li><a href="#" id="bold">Comment ça marche ?</a></li>
+            <li><a href="#">Commencer</a></li>
+            <li><a href="#">Galerie</a></li>
+            <li><a href="#">Communauté</a></li>
+            <li><a href="#">Contact</a></li>
 
-    <div class="how_content">
-        <h2>Créer son environnement</h2>
-        <p>Pour créer son environnement, il vous faudra choisir un par un, un insecte dans la liste. Cependant, certains insectes n’ont pas ou peu d’influence sur l’environnement. D’autres seront primordiales et devront être choisi en premier lieu.</p><p>Utilisez le principe du cliquez-glissez pour ajouter un insecte à l’environnement, vous verrez en haut a droite de l’écran l’impact effectué sur la nature, vous entendrez aussi le son qu’il émet.</p>
+    	</div>
 
-        <h2>Quel insecte choisir ?</h2>
+        <div class="how_content">
+            <h2>Créer son environnement</h2>
+            <p>Pour créer son environnement, il vous faudra choisir un par un, un insecte dans la liste. Cependant, certains insectes n’ont pas ou peu d’influence sur l’environnement. D’autres seront primordiales et devront être choisi en premier lieu.</p><p>Utilisez le principe du cliquez-glissez pour ajouter un insecte à l’environnement, vous verrez en haut a droite de l’écran l’impact effectué sur la nature, vous entendrez aussi le son qu’il émet.</p>
 
-        <p>Pour chaque insecte vous trouverez une despcription en cliquant sur «plus d’informations». Ceci vous aidera à comprendre l’impact de celui-ci sur l’environnement. Ainsi, vous serez en mesure de faire les bons choix.</p>
+            <h2>Quel insecte choisir?</h2>
 
-        <br />
+            <p>Pour chaque insecte vous trouverez une despcription en cliquant sur «plus d’informations». Ceci vous aidera à comprendre l’impact de celui-ci sur l’environnement. Ainsi, vous serez en mesure de faire les bons choix.</p>
 
-        <h2>Partager son environnement</h2>
-        <p>Une fois terminer, vous pouvez, en vous inscrivant, sauvegarder votre environnement et ainsi l’ajouter à votre profil pour le partager avec les autres membres.</p>
-        <p>Vous pouvez aussi le relier à votre Facebook personnel.
-        <p>Vous trouverez dans la page «galerie» des exemples d’environnement, des plus populaires au moins populaire, enfin, dans la page «communauté», vous aurez accès à l’ensemble de l’environnement crée par les internautes.</p>
+            <br />
 
-        <h2>Lorem ipsum dolore sit amet</h2>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque : <br />
-            <ul>
-                <li>Lorem</li>
-                <li>Ipsum</li>
-                <li>Dolore</li>
-                <li>Sit</li>
-        </p>
-            </ul>
-</div>
+            <h2>Partager son environnement</h2>
+            <p>Une fois terminer, vous pouvez, en vous inscrivant, sauvegarder votre environnement et ainsi l’ajouter à votre profil pour le partager avec les autres membres.</p>
+            <p>Vous pouvez aussi le relier à votre Facebook personnel.</p> <!-- Fermeture de la balise p -->
+
+            <p>Vous trouverez dans la page «galerie» des exemples d’environnement, des plus populaires au moins populaire, enfin, dans la page «communauté», vous aurez accès à l’ensemble de l’environnement crée par les internautes.</p>
+
+            <h2>Lorem ipsum dolore sit amet</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque : <br />
+                <ul>
+                    <li>Lorem</li>
+                    <li>Ipsum</li>
+                    <li>Dolore</li>
+                    <li>Sit</li>
+                </ul>
+            </p><!-- repositionnement de la balise fermante <p> qui était dans la lsite non-ordonnée-->
+    </div>
 
 	<img src="images/bugz_commentcamarche.jpg" />
 
@@ -91,11 +116,18 @@
             <td>5</td>
             <td>15</td>
         </tr>
-        <td colspan="2">
-            Total : 20
-        </td>
+        <!-- Omission d'un table raw tr -->
+        <tr>
+            <td colspan="2">Total : 20</td>
+            <td></td>
+        </tr>
+        
     </table>
 
-    <div style="float:left;margin-top:20px;color:#999;font-size:9px;font-style:underline;">Ce site est une simulation réalisée dans le cadre de la Licence pro Webdesign Sensoriel 2010.</div>
+    <!-- Définition du style dans de l'id footer dans le header-->
+    <div id="footer">Ce site est une simulation réalisée dans le cadre de la Licence pro Webdesign Sensoriel 2010.</div>
 </body>
 </html>
+
+<!-- J'ai utilisé Sublime Text pour corriger ce code
+   et j'ai commenté les différnetes lignes que j'ai modifié  -->
